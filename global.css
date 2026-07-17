@@ -587,24 +587,7 @@ footer {
 }
 /* Scroll Animations */
 
-.section,
-.skill-card,
-.project-card,
-.about-content,
-.contact-content {
-    opacity: 0;
-    transform: translateY(35px);
-    transition: all 0.8s ease;
-}
-
-.section.show,
-.skill-card.show,
-.project-card.show,
-.about-content.show,
-.contact-content.show {
-    opacity: 1;
-    transform: translateY(0);
-}
+.
 
 
 /* Active Navigation */
