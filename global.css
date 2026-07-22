@@ -1268,9 +1268,6 @@ footer {
 
 
 }
-body{
-    border:5px solid red;
-}
 /* ===== FIX ABOUT SECTION ===== */
 
 #about {
@@ -1890,18 +1887,18 @@ html{
 
 
 .hero-image img{
+    width:370px;
+    height:370px;
+    object-fit:cover;
+    border-radius:50%;
+    display:block;
 
-    width:280px;
+    border:2px solid rgba(125,231,255,.35);
 
-}
+    box-shadow:
+    0 0 60px rgba(125,231,255,.20);
 
-
-.hero-buttons{
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
+    animation:imageFloat 5s ease-in-out infinite;
 }
 
 }/* ===== Mobile Section Spacing ===== */
@@ -2041,6 +2038,87 @@ html{
 .nav-btn{
 
     display:none;
+
+}
+
+}
+/* ===== FINAL MOBILE FIX ===== */
+
+@media(max-width:768px){
+
+.navbar{
+
+left:50%;
+
+transform:translateX(-50%);
+
+top:15px;
+
+width:92%;
+
+padding:0;
+
+border-radius:25px;
+
+}
+
+.nav-content{
+
+height:70px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:0 20px;
+
+}
+
+.logo{
+
+display:block;
+
+font-size:24px;
+
+}
+
+.nav-btn{
+
+display:block;
+
+font-size:12px;
+
+padding:10px 18px;
+
+}
+
+.menu-btn{
+
+display:none;
+
+}
+
+.nav-links{
+
+display:flex;
+
+gap:20px;
+
+position:static;
+
+background:none;
+
+padding:0;
+
+width:auto;
+
+}
+
+.nav-links a{
+
+font-size:14px;
 
 }
 
