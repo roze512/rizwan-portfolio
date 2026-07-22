@@ -1972,3 +1972,76 @@ html{
 
 
 }
+.menu-btn{
+    display:block !important;
+    color:white !important;
+    font-size:30px;
+}
+/* ===== FINAL MOBILE NAV FIX ===== */
+
+@media(max-width:768px){
+
+.navbar{
+    width:90%;
+    top:15px;
+}
+
+.nav-content{
+    height:70px;
+}
+
+
+.menu-btn{
+    display:block !important;
+}
+
+
+.nav-links{
+
+    position:absolute;
+    top:80px;
+    left:0;
+
+    width:100%;
+
+    background:#0a0a0a;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    display:none;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    text-align:center;
+
+    border:1px solid rgba(125,231,255,.2);
+
+}
+
+
+.nav-links.active{
+
+    display:flex;
+
+}
+
+
+.nav-links a{
+
+    font-size:16px;
+    color:white;
+
+}
+
+
+.nav-btn{
+
+    display:none;
+
+}
+
+}
